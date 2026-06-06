@@ -1,142 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neatova | Eco-Tech Power Solutions</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .product-card img { transition: transform 0.3s ease; }
-        .product-card:hover img { transform: scale(1.05); }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEATMOA - Luxury Intimates</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+background:#070207;
+color:#fff;
+font-family:'Inter',sans-serif;
+}
+
+.luxury-font{
+font-family:'Playfair Display',serif;
+}
+
+/* HERO */
+.hero-banner{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.8)),
+url('images/banner.jpg');
+
+background-size:cover;
+background-position:center;
+}
+
+/* CARD */
+.art-card{
+background:rgba(255,255,255,.03);
+border:1px solid rgba(255,255,255,.08);
+transition:.4s;
+overflow:hidden;
+}
+
+.art-card:hover{
+transform:translateY(-8px);
+border-color:#ff5fa2;
+}
+
+.art-card img{
+width:100%;
+aspect-ratio:2/3;
+object-fit:cover;
+}
+
+/* WHATSAPP */
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:#fff;
+padding:14px 18px;
+border-radius:50px;
+z-index:999;
+font-weight:bold;
+text-decoration:none;
+}
+
+/* MAP */
+.map{
+filter:grayscale(1) contrast(1.2);
+transition:.5s;
+}
+.map:hover{
+filter:grayscale(0);
+}
+
+</style>
+
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
 
-    <!-- Header -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-3xl font-bold text-blue-600 tracking-tighter uppercase">Neatova</div>
-            <ul class="flex space-x-8 font-medium">
-                <li><a href="#" class="hover:text-blue-600 transition">Products</a></li>
-                <li><a href="#" class="hover:text-blue-600 transition">Eco-Solutions</a></li>
-                <li><a href="#" class="hover:text-blue-600 transition">About</a></li>
-            </ul>
-        </nav>
-    </header>
+<body>
 
-    <!-- Hero Section -->
-    <section class="bg-blue-900 text-white py-20 px-6 text-center">
-        <h1 class="text-5xl font-extrabold mb-4">Empowering Your Adventures</h1>
-        <p class="text-xl text-blue-100 max-w-2xl mx-auto">High-capacity, reliable, and portable energy solutions for camping, emergency backup, and off-grid living.</p>
-    </section>
+<!-- WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/8618167131142" target="_blank">
+WhatsApp
+</a>
 
-    <!-- Product Grid -->
-    <main class="max-w-7xl mx-auto px-6 py-16">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            <!-- Card 1 -->
-            <div class="product-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-                <a href="https://youtube.com/shorts/3bqhg00rlzs?si=n8QaZvOoyFHoMKOR"_blank">
-                    <img src="image_6c50c1.jpg" alt="Solar Powered Station" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x256/e2e8f0/64748b?text=Solar+Power+Station'">
-                </a>
-                <div class="p-6">
-                    <h2 class="text-xl font-bold mb-2">Solar-Integrated Power Station</h2>
-                    <p class="text-gray-600 mb-4">Seamless energy independence with included photovoltaic charging panels.</p>
-                </div>
-            </div>
+<!-- HEADER -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-6 bg-black/30 backdrop-blur">
+<h1 class="luxury-font text-3xl tracking-[0.4em]">NEATMOA</h1>
 
-            <!-- Card 2 -->
-            <div class="product-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-                <a href="https://youtube.com/shorts/MuY_SC4GgyQ?feature=share" target="_blank">
-                    <img src="image_6c5081.jpg" alt="Compact Smart Station" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x256/e2e8f0/64748b?text=Smart+Energy+Hub'">
-                </a>
-                <div class="p-6">
-                    <h2 class="text-xl font-bold mb-2">Compact Smart Energy Hub</h2>
-                    <p class="text-gray-600 mb-4">Factory-direct reliability with multi-port DC and AC output capabilities.</p>
-                </div>
-            </div>
+<nav class="space-x-8 text-sm text-white/70">
+<a href="#collection">Collection</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
 
-            <!-- Card 3 -->
-            <div class="product-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-                <a href="https://youtube.com/shorts/jUOlQk86cdc?si=IdgIzz2Suvyc2Zvk"_blank">
-                    <img src="image_6c503f.jpg" alt="1500W Outdoor Station" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x256/e2e8f0/64748b?text=1500W+Power+Station'">
-                </a>
-                <div class="p-6">
-                    <h2 class="text-xl font-bold mb-2">1500W Heavy-Duty Station</h2>
-                    <p class="text-gray-600 mb-4">High-performance power for extended camping and professional field use.</p>
-                </div>
-            </div>
+<!-- HERO -->
+<section class="hero-banner">
+<div>
+<h1 class="luxury-font text-6xl md:text-8xl italic">
+Luxury Intimates
+</h1>
+<p class="mt-6 tracking-[0.5em] text-pink-200 uppercase text-sm">
+Elegance Confidence Desire
+</p>
+</div>
+</section>
 
-            <!-- Card 4 -->
-            <div class="product-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-                <a href="https://www.facebook.com/your-page-id" target="_blank">
-                    <img src="image_6c4d5c.jpg" alt="1039Wh High Capacity" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x256/e2e8f0/64748b?text=1039Wh+Capacity'">
-                </a>
-                <div class="p-6">
-                    <h2 class="text-xl font-bold mb-2">1039Wh High-Capacity Pro</h2>
-                    <p class="text-gray-600 mb-4">Eliminate range anxiety with massive capacity and intuitive digital display.</p>
-                </div>
-            </div>
+<!-- COLLECTION -->
+<section id="collection" class="max-w-7xl mx-auto py-24 px-6">
 
-            <!-- Card 5 -->
-            <div class="product-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-                <a href="https://youtube.com/shorts/FIlQVFt2jvA?feature=share" target="_blank">
-                    <img src="image_6c4d00.jpg" alt="Rugged Power Bank" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x256/e2e8f0/64748b?text=Rugged+Power+Bank'">
-                </a>
-                <div class="p-6">
-                    <h2 class="text-xl font-bold mb-2">Rugged 20000mAh Power Bank</h2>
-                    <p class="text-gray-600 mb-4">Hand-crank generator and solar charging capabilities for ultimate survival.</p>
-                </div>
-            </div>
+<h2 class="luxury-font text-4xl text-center mb-16">
+Featured Collection
+</h2>
 
-            <!-- Card 6 -->
-            <div class="product-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
-                <a href="https://youtube.com/shorts/xcLsptE6hLI?si=lmvDZCOjpadVPbrZ" target="_blank">
-                    <img src="image_6c4cc2.jpg" alt="Foldable Solar Station" class="w-full h-64 object-cover" onerror="this.src='https://placehold.co/400x256/e2e8f0/64748b?text=300W+Solar+System'">
-                </a>
-                <div class="p-6">
-                    <h2 class="text-xl font-bold mb-2">300W Foldable Solar System</h2>
-                    <p class="text-gray-600 mb-4">Built-in foldable solar panels for maximum portability and convenience.</p>
-                </div>
-            </div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
 
-        </div>
-    </main>
+<div class="art-card p-2">
+<a href="https://youtube.com/watch?v=VIDEO01" target="_blank">
+<img src="images/01.jpg">
+</a>
+</div>
 
-    <!-- Contact & Location Section -->
-    <section class="max-w-7xl mx-auto px-6 py-16 bg-white rounded-2xl my-8">
-        <h2 class="text-3xl font-bold mb-8 text-center">Get In Touch</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
-                <div class="bg-blue-50 p-6 rounded-xl">
-                    <h3 class="font-bold text-lg mb-2">Email</h3>
-                    <p class="text-blue-700 underline">qilinsm@gmail.com</p>
-                </div>
-                <div class="bg-blue-50 p-6 rounded-xl">
-                    <h3 class="font-bold text-lg mb-2">WhatsApp</h3>
-                    <p class="text-blue-700">+86 18167131142</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-xl">
-                    <h3 class="font-bold text-lg mb-2">Location</h3>
-                    <p class="text-gray-600">Qianjiang Development Zone, Linping District, Hangzhou, China</p>
-                </div>
-            </div>
-            <div class="w-full h-80 rounded-xl overflow-hidden shadow-lg">
-                <iframe 
-                    class="w-full h-full"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d173365.1192800171!2d120.17066986562502!3d30.435216300000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x344abd5555555555%3A0x5555555555555555!2sQianjiang%20Development%20Zone%2C%20Linping%20District%2C%20Hangzhou%2C%20China!5e0!3m2!1sen!2sus!4v1717468500000!5m2!1sen!2sus" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy">
-                </iframe>
-            </div>
-        </div>
-    </section>
+<div class="art-card p-2">
+<a href="https://youtube.com/watch?v=VIDEO02" target="_blank">
+<img src="images/02.jpg">
+</a>
+</div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-10 text-center">
-        <p>&copy; 2026 Neatova Energy Technologies. All rights reserved.</p>
-    </footer>
+<div class="art-card p-2">
+<a href="https://youtube.com/watch?v=VIDEO03" target="_blank">
+<img src="images/03.jpg">
+</a>
+</div>
+
+<div class="art-card p-2">
+<a href="https://youtube.com/watch?v=VIDEO04" target="_blank">
+<img src="images/04.jpg">
+</a>
+</div>
+
+<div class="art-card p-2">
+<a href="https://youtube.com/watch?v=VIDEO05" target="_blank">
+<img src="images/05.jpg">
+</a>
+</div>
+
+<div class="art-card p-2">
+<a href="https://youtube.com/watch?v=VIDEO06" target="_blank">
+<img src="images/06.jpg">
+</a>
+</div>
+
+<div class="art-card p-2">
+<a href="https://youtube.com/watch?v=VIDEO07" target="_blank">
+<img src="images/07.jpg">
+</a>
+</div>
+
+<div class="art-card p-2">
+<a href="https://youtube.com/watch?v=VIDEO08" target="_blank">
+<img src="images/08.jpg">
+</a>
+</div>
+
+<div class="art-card p-2">
+<a href="https://youtube.com/watch?v=VIDEO09" target="_blank">
+<img src="images/09.jpg">
+</a>
+</div>
+
+<div class="art-card p-2">
+<a href="https://youtube.com/watch?v=VIDEO10" target="_blank">
+<img src="images/10.jpg">
+</a>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24 border-t border-white/10">
+
+<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 px-6">
+
+<div>
+<h2 class="luxury-font text-4xl mb-8">Private Inquiry</h2>
+
+<p class="mb-3">Email: qilinsm@gmail.com</p>
+<p class="mb-3">WhatsApp: +86 18167131142</p>
+<p class="mb-3">Hangzhou, Zhejiang, China</p>
+</div>
+
+<div class="h-80 border border-white/10">
+<iframe
+class="w-full h-full map"
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d340807.6974950346!2d119.9572!3d30.2459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x344abc503289052b%3A0x7d2427a1924559b3!2sHangzhou%2C%20Zhejiang%2C%20China!5e0!3m2!1sen!2sus!4v1716492312000"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="py-10 text-center border-t border-white/10 text-white/40">
+© 2026 NEATMOA - All Rights Reserved
+</footer>
 
 </body>
 </html>
